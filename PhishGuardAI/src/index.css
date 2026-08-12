@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #FBEFEF;
+  --panel: #FFFFFF;
+  --panel-2: #FFE2E2;
+  --hair: #F5CBCB;
+  --text: #3B2F3D;
+  --muted: #8A6B78;
+  --muted-2: #B79AA6;
+  --red: #C1585F;
+  --amber: #BF8A4A;
+  --teal: #C5B3D3;
+  --blue: #A98FBE;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(197, 179, 211, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 90% 15%, rgba(245, 203, 203, 0.45) 0%, transparent 45%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+code, pre, .font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Custom scrollbar styling for technical panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--panel-2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--muted-2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+

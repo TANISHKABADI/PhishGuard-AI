@@ -1,0 +1,7 @@
+{
+  "name": "PhishGuard AI",
+  "description": "Real-time social engineering & phishing shield and forensic detection console powered by Gemini API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
